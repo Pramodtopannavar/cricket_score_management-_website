@@ -1,0 +1,291 @@
+@charset "utf-8";
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px; 
+}
+
+
+/**first innings***/
+#first_innings{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('/homepage/score update/image/p3.png');
+  background-size: cover; 
+  background-position: center;/* Ensure the entire background image is visible */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-attachment: fixed;
+}
+
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Hide overflowing video */
+  z-index: -1;
+}
+
+#video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire container */
+  z-index: -1; /* Place the video behind other content */
+}
+
+/***second innings**/
+#second_innings{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('/homepage/score update/image/second.png');
+  background-size: cover; 
+  background-position: center;/* Ensure the entire background image is visible */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-attachment: fixed;
+}
+
+
+.add_score{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5%;
+}
+.first_team_add_score{
+  width: 400px;
+  height: 500px;
+  box-shadow: 4px 4px 8px gray;
+  background: rgba(86, 86, 86, 0.3);
+  backdrop-filter: blur(10px);
+  margin-bottom: 20px;
+}
+.add_score >div:hover{
+  box-shadow: 2px 2px 4px gray;
+}
+/****ADD TLTLE SECTION***/
+/*TITLE SECTION*/
+.page_title_section {
+  width: 100%;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.cricket_ti {
+  width: 100%; /* Adjust width as needed */
+  text-align: center; /* Center the text */
+  color: red; /* Set text color to red */
+  font-size: 2.5rem; /* Increase font size for emphasis */
+  font-weight: 600; /* Set font weight */
+  font-family: Arial, sans-serif; /* Set font family */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow for emphasis */
+}
+
+
+.right_section {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+.select_section{
+  border-radius: 9px;
+  border: none;
+  background-color: rgb(0, 168, 219);
+  color: #fff;
+  font-weight: 500;
+  height: 35px;
+}
+.select_section:focus{
+  outline: none;
+}
+
+.settinr_button {
+  width: 35px;
+  height: 35px;
+  border-radius: 17.5px;
+  color: #e6f4f5;
+  font-size: 1.5rem;
+  background-color: #0194dd;
+  text-align: center;
+  padding-top: 6px;
+}
+.settinr_button:hover {
+  cursor: pointer;
+}
+/*****FIRST TEAM FORM****/
+.add_score_section_form_ft{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.add_score_section_form_ft p{
+  margin-bottom: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(26, 25, 25, 0.979);
+}
+.add_score_section_form_ft select{
+  width: 200px;
+}
+.form_header{
+  width: 100%;
+  height: 40px;
+  background-image: linear-gradient(45deg,rgba(4, 77, 138, 0.959),rgb(2, 71, 201));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.update_text{
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #bfddf5;
+}
+.main_run{
+  display: flex;
+  justify-content: space-between;
+}
+.main_run select{
+  width: 100px;
+}
+#other_run{
+  width: 200px;
+}
+#extrarun{
+  width: 200px;
+}
+/***FIRST TEAM SCORE PREVIEW SECTION**/
+.first_team_score_preview,
+.first_team_score_preview2 {
+  width: 90%;
+  max-width: 600px;
+  min-height: 500px;
+  box-shadow: 4px 4px 8px gray;
+  display: block; /* Change display property to block */
+  align-items: center;
+  background: rgba(86, 86, 86, 0.3);
+  backdrop-filter: blur(20px);
+  margin-bottom: 20px; /* Add margin to create space between the elements */
+  padding-top: 5px;
+  
+}
+
+
+.hr_line_for_scoreboard{
+  width: 93%;
+  height: 2px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: gray;
+}
+
+.batting_score{
+  width: 100%;
+}
+.batting_score_table{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.table_row{
+  width: 94%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  
+}
+.table_column1{
+  width: 40%;
+  
+  display: flex;
+}
+.p_nm{
+  width: 100%; 
+}
+.p_status{
+  word-wrap: none;
+}
+.score_headingid{
+  display: flex;
+  justify-content: space-around;
+}
+.table_column2{
+  width: 50px;
+  height: 30px;
+  text-align: center;
+}
+.footer_score{
+  width: 94%;
+  height: 30px;
+  display: flex;
+}
+.name_txt{
+  width: 67.1%;
+  height: 30px;
+}
+.run_footer_prev{
+  margin-left: 80%;
+}
+
+.centered-form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.styled-button {
+  background-color: #4CAF50; /* Green background */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+.styled-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.styled1-button {
+  background-color: #790606; /* Green background */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+.styled1-button:hover {
+  background-color: #6b0b0b; /* Darker green on hover */
+}

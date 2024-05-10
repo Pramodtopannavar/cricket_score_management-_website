@@ -1,0 +1,21 @@
+body {
+    background: linear-ient(#ffdad5, #fff7f9);
+    width: 100%;
+    height: 200px;
+}
+section {
+    padding-top: 80px;
+}
+.section-title {
+    text-align: center;
+}
+.about .company-info{
+  margin-top: 30px;
+}
+.about .row{
+    padding: 0 10px;
+}
+.about ul{
+    padding-left: 20px;
+    
+}

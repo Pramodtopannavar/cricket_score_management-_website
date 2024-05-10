@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equvi="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSMS</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">OCSMS</h1>
+        <ul class="nav-links">
+            <li class="active" ><a href="#home"style="color: aliceblue;">HOME</a></li>
+            <li><a href="/homepage/viewer/index.php" style="color: aliceblue;">VIEW SCORE</a></li>
+            <li><a href="imgslide.html" style="color: aliceblue;">ACHIVEMENTS</a></li>
+            <li><a href="about.html" style="color: aliceblue;">ABOUT</a></li>
+            <li class="ctn"><a href="contact.html" style="color: aliceblue;">CONTACT</a></li>
+        </ul>
+        <img src="images/menu.png" alt="" class="menu-btn">
+    </nav>
+    <header> 
+        <div class="header-content">
+            <h2>ONLINE CRICKET</h2>
+            <div class="line"></div>
+            <h1>SCORE MANAGEMENT SYSTEM</h1> 
+            <a href="/homepage/score update/admin.php" class="ctn">Get Started</a>
+        </div>
+    </header>
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+       
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+    </script> 
+</body>
+</html>
